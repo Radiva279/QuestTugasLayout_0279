@@ -2,4 +2,9 @@
     <string name="app_name">TugasLayout</string>
         <string name="prodi">Teknologi Informasi</string>
         <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
+
+        <string name="nama_1">Soekarno</string>
+        <string name="telepon_1">08123456789</string>
+        <string name="alamat_1">Ngaglik, Sleman</string>
+
 </resources>
