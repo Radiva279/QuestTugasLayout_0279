@@ -11,4 +11,8 @@
         <string name="telepon_2">08987654321</string>
         <string name="alamat_2">Imogiri, Bantul</string>
 
+        <string name="nama_3">Soeharto</string>
+        <string name="telepon_3">08213456789</string>
+        <string name="alamat_3">Kemusuk, Sleman</string>
+
 </resources>
