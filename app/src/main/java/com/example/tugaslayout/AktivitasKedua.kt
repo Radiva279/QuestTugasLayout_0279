@@ -96,6 +96,17 @@ fun CardMahasiswa(
                     color = colorResource(warnaTeks)
                 )
                 Spacer(modifier = Modifier.height(4.dp))
+
+                Text(
+                    text = stringResource(telepon),
+                    fontSize = 12.sp,
+                    color = colorResource(warnaTeks)
+                )
+                Text(
+                    text = stringResource(alamat),
+                    fontSize = 12.sp,
+                    color = colorResource(warnaTeks)
+                )
             }
         }
     }
