@@ -19,9 +19,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             TugasLayoutTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                Scaffold { innerPadding ->
+                    AktivitasKedua(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
