@@ -107,6 +107,14 @@ fun CardMahasiswa(
                     fontSize = 12.sp,
                     color = colorResource(warnaTeks)
                 )
+                Spacer(modifier = Modifier.width(6.dp))
+
+                Image(
+                    painter = painterResource(R.drawable.logo_umy),
+                    contentDescription = null,
+                    modifier = Modifier.size(42.dp)
+                )
+
             }
         }
     }
