@@ -40,14 +40,14 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
             text = stringResource(R.string.prodi),
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
-            color = colorResource(R.color.text_dark)
+            color = colorResource(R.color.black)
         )
-        Spacer(modifier = Modifier.height(6.dp))
+        Spacer(modifier = Modifier.height(4.dp))
         Text(
             text = stringResource(R.string.univ),
             fontSize = 14.sp,
             fontWeight = FontWeight.Medium,
-            color = colorResource(R.color.text_dark)
+            color = colorResource(R.color.black)
         )
         Spacer(modifier = Modifier.height(24.dp))
 
@@ -85,7 +85,7 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
             warna = R.color.card_4_Pink,
             warnaTeks = R.color.text_light
         )
-        Spacer(modifier = Modifier.height(80.dp))
+        Spacer(modifier = Modifier.height(120.dp))
 
         Text(
             text = stringResource(R.string.copy),
@@ -107,56 +107,64 @@ fun CardMahasiswa(
     Card(
         modifier = modifier
             .fillMaxWidth()
-            .height(112.dp),
-        shape = RoundedCornerShape(16.dp),
+            .height(100.dp),
+        shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(
-            containerColor = colorResource(warna)),
-        elevation = CardDefaults.cardElevation(defaultElevation = 3.dp)
+            containerColor = colorResource(warna)
+        ),
+        elevation = CardDefaults.cardElevation(
+            defaultElevation = 2.dp
+        )
     ) {
+
         Row(
             modifier = Modifier
                 .fillMaxSize()
-                .padding(horizontal = 10.dp, vertical = 8.dp),
+                .padding(horizontal = 12.dp, vertical = 8.dp),
             verticalAlignment = Alignment.CenterVertically
         ) {
+            // Logo sebelah kiri
             Image(
                 painter = painterResource(R.drawable.logo_umy),
                 contentDescription = null,
-                modifier = Modifier.size(52.dp)
+                modifier = Modifier.size(56.dp)
             )
-            Spacer(modifier = Modifier.width(10.dp))
 
+            Spacer(modifier = Modifier.width(12.dp))
+
+            // Informasi mahasiswa
             Column(
                 modifier = Modifier.weight(1f),
                 verticalArrangement = Arrangement.Center
             ) {
                 Text(
                     text = stringResource(nama),
-                    fontSize = 16.sp,
+                    fontSize = 30.sp,
                     fontWeight = FontWeight.Bold,
                     color = colorResource(warnaTeks)
                 )
-                Spacer(modifier = Modifier.height(4.dp))
+                Spacer(modifier = Modifier.height(2.dp))
 
                 Text(
                     text = stringResource(telepon),
-                    fontSize = 12.sp,
-                    color = colorResource(warnaTeks)
+                    fontSize = 16.sp,
+                    color = colorResource(R.color.teal_200)
                 )
+
                 Text(
                     text = stringResource(alamat),
-                    fontSize = 12.sp,
-                    color = colorResource(warnaTeks)
+                    fontSize = 16.sp,
+                    color = colorResource(R.color.purple_200)
                 )
-                Spacer(modifier = Modifier.width(6.dp))
-
-                Image(
-                    painter = painterResource(R.drawable.logo_umy),
-                    contentDescription = null,
-                    modifier = Modifier.size(42.dp)
-                )
-
             }
+            Spacer(modifier = Modifier.width(10.dp))
+
+            // Logo sebelah kanan
+            Image(
+                painter = painterResource(R.drawable.logo_umy),
+                contentDescription = null,
+                modifier = Modifier.size(56.dp)
+            )
         }
     }
 }
