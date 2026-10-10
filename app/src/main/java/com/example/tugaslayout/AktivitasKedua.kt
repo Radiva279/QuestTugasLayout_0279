@@ -26,16 +26,19 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
             .padding(horizontal = 20.dp, vertical = 24.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text( text = stringResource(R.string.prodi),
+        Text(
+            text = stringResource(R.string.prodi),
             fontSize = 28.sp,
             fontWeight = FontWeight.Bold,
-            color = colorResource(R.color.text_dark) )
+            color = colorResource(R.color.text_dark)
+        )
         Spacer(modifier = Modifier.height(6.dp))
+        Text(
+            text = stringResource(R.string.univ),
+            fontSize = 14.sp,
+            fontWeight = FontWeight.Medium,
+            color = colorResource(R.color.text_dark)
+        )
+        Spacer(modifier = Modifier.height(24.dp))
     }
-    Text( text = stringResource(R.string.univ),
-        fontSize = 14.sp,
-        fontWeight = FontWeight.Medium,
-        color = colorResource(R.color.text_dark))
-    Spacer(modifier = Modifier.height(24.dp))
-
 }
