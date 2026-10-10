@@ -86,6 +86,12 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
             warnaTeks = R.color.text_light
         )
         Spacer(modifier = Modifier.height(24.dp))
+
+        Text(
+            text = stringResource(R.string.copy),
+            fontSize = 12.sp,
+            color = colorResource(R.color.text_dark)
+        )
     }
 }
 
