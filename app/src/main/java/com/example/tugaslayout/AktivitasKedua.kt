@@ -1,6 +1,7 @@
 package com.example.tugaslayout
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -83,6 +84,19 @@ fun CardMahasiswa(
                 modifier = Modifier.size(52.dp)
             )
             Spacer(modifier = Modifier.width(10.dp))
+
+            Column(
+                modifier = Modifier.weight(1f),
+                verticalArrangement = Arrangement.Center
+            ) {
+                Text(
+                    text = stringResource(nama),
+                    fontSize = 16.sp,
+                    fontWeight = FontWeight.Bold,
+                    color = colorResource(warnaTeks)
+                )
+                Spacer(modifier = Modifier.height(4.dp))
+            }
         }
     }
 }
