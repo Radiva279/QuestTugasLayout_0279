@@ -51,6 +51,14 @@ fun AktivitasKedua(modifier: Modifier = Modifier) {
         )
         Spacer(modifier = Modifier.height(24.dp))
 
+        CardMahasiswa(
+            nama = R.string.nama_1,
+            telepon = R.string.telepon_1,
+            alamat = R.string.alamat_1,
+            warna = R.color.card_1_Denim,
+            warnaTeks = R.color.text_dark
+        )
+        Spacer(modifier = Modifier.height(14.dp))
     }
 }
 
